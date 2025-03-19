@@ -94,7 +94,7 @@ public class ImageProcessingService {
     }
 
     public Mat applyFilter(Mat image, String filterType) {
-        validateColorSpace(image, 3); // Ensure color image
+        validateColorSpace(image, 3);
 
         switch(filterType.toLowerCase()) {
             case "average":

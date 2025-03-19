@@ -64,7 +64,7 @@ public class FileStorageService {
         image.release();
     }
 
-    @Scheduled(fixedRate = 30 * 60 * 1000) // Runs every 30 minutes
+    @Scheduled(fixedRate = 30 * 60 * 1000)
     public void autoDelete() {
         File dir = new File(uploadDir);
         long currTime = System.currentTimeMillis();

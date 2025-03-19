@@ -23,7 +23,6 @@ public class FeatureDetectionService {
                 break;
 
             case "harris":
-                // Harris corners using corner detection
                 Mat dst = new Mat();
                 Imgproc.cornerHarris(grayImage, dst, 2, 3, 0.04);
                 Mat dstNorm = new Mat();
